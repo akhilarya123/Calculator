@@ -1,0 +1,100 @@
+<! doctype html>
+<html>
+	<head>
+		<title>This is the head</title>
+		<link rel="stylesheet" href="reset.css" media="screen" />
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+		<style id="cssfile" type="text/css">
+		body{
+		background-image:linear-gradient(to bottom, #000c8f, #00010a);
+		}
+		#main{
+		margin: 50px auto;
+		background-color:black;
+		width:300px;
+		height:500px;
+		border-radius:5px;
+		box-shadow:0 0 20px green;
+		
+		}
+		
+		#screen{
+		height:25%;
+		width:100%;
+		text-align:right;
+		background-color:black;
+		}
+		
+		button{
+		border:0.4px solid black;
+		font-size:200%;
+		}
+		button:hover{
+		background-image:linear-gradient(to bottom,red,blue);
+		}
+		button:focus{
+		outline:0;}
+		
+		.sq{
+		width:25%;
+		height:75px;
+		}
+		.rec{
+		width:75%;
+		height:75px;
+		}
+		.number{
+		background-image:linear-gradient(to bottom,#f2dc13,#ebf059);
+		}
+		.operator{
+		color:white;
+		background-image:linear-gradient(to bottom,#821704,#3d0000);
+		
+		}
+		
+		#hystory{
+		font-size:200%;
+		color:#ebe9a7;
+		}
+		#output{
+		font-size:325%;
+		color:#169612;
+		text-shadow: 0px 0px 2px white;
+		
+		}
+		#warning{
+		top:20px;
+		text-align:center;
+		position:relative;
+		color:red;
+		display:none;
+		}
+		
+		</style>
+		
+	</head>
+
+	<body>
+		<div id="main">
+		
+		<div id="screen">
+		<p id="hystory">this is hystory</p><p id="output">0123456789</p>
+		<p id="warning">maximum limit reached</p>
+		</div>
+		<button class="number sq" id="7">7</button ><button class="number sq" id="8">8</button><button class="number sq" id="9">9</button><button class="operator sq" id="÷">/</button>
+		<button class="number sq" id="4">4</button ><button class="number sq" id="5">5</button><button class="number sq" id="6">6</button><button class="operator sq" id="×">*</button>
+		<button class="number sq" id="1">1</button ><button class="number sq" id="2">2</button><button class="number sq" id="3">3</button><button class="operator sq" id="-">-</button>
+		<button class="number rec" id="0">0</button ><button class="operator sq" id="+">+</button >
+		<button class="operator sq" id="C">C</button ><button class="operator rec" id="=">=</button >
+		</div>
+		
+		<script id="jsfile" type="text/javascript" src="calculator.js">	</script>
+		
+		<script type="text/javascript">	</script>
+
+
+	</body>
+</html>
+
+    
